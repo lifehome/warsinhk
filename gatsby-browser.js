@@ -11,6 +11,10 @@ import RootLayout from "@/components/templates/RootLayout"
 import ContextStore from "@/contextStore"
 import { ROUTE_CHANGE } from "@/reducers/route"
 
+import "tailwindcss/base.css"
+import "tailwindcss/components.css"
+import "tailwindcss/utilities.css"
+
 // update the route
 const Router = ({ path }) => {
   // some shit when useStaticQuery here..
@@ -44,10 +48,10 @@ export const wrapRootElement = ({ element }) => {
   -----------------------------
 
   We are waiting for your commit :)
-  
+
   GitHub Repo:
   https://github.com/nandiheath/warsinhk
-  
+
   `)
 
   return <RootLayout>{element}</RootLayout>

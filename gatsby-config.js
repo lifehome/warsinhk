@@ -75,6 +75,7 @@ module.exports = {
         },
       },
     },
+    `gatsby-plugin-postcss`,
     // `gatsby-plugin-offline`,
     `gatsby-plugin-remove-serviceworker`,
     `gatsby-plugin-remove-trailing-slashes`,
