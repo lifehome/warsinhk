@@ -14,7 +14,7 @@ import { createDedupOptions } from "@/utils/search"
 import { mapColorForStatus } from "@/utils/colorHelper"
 import { PageContent } from "@/components/atoms/Container"
 import { WarsCaseBoxContainer } from "@/components/organisms/CaseBoxContainer"
-import { WarsCaseCard } from "@components/organisms/CaseCard"
+// import { WarsCaseCard } from "@components/organisms/CaseCard"
 import InfiniteScroll from "@/components/molecules/InfiniteScroll"
 import ConfirmedCasesSummary from "@/components/molecules/ConfirmedCasesSummary"
 import { ResponsiveWrapper } from "@components/atoms/ResponsiveWrapper"
@@ -32,6 +32,8 @@ import BoxViewIcon from "@/components/icons/box_view.svg"
 import CardViewIcon from "@/components/icons/card_view.svg"
 import SortIcon from "@/components/icons/sort.svg"
 import moment from "moment"
+
+import { ModernCaseCard } from "@components/_modern/organisms/CaseCard"
 
 const TitleContainer = styled.div`
   display: flex;
@@ -365,7 +367,7 @@ const CasesPage = props => {
   }
 
   const renderCaseCard = node => (
-    <WarsCaseCard
+    <ModernCaseCard
       node={node}
       i18n={i18n}
       t={t}
